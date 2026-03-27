@@ -1,5 +1,5 @@
 import Header from '../../widgets/layout/ui/header.jsx';
-import VisualSection from '../../widgets/intro/visualSection.jsx';
+import VisualSection from '../../widgets/intro/visual-section/ui/visualSection.jsx';
 
 function Intro() {
   return (
