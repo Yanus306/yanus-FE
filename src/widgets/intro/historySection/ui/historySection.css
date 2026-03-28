@@ -24,25 +24,47 @@
 .history-container {
     position: relative;
 
-    width: 90vw;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    gap: 12.9vh;
+    gap: 0;
 }
 
-/* 중앙선 */
-.history-line {
+/* 중앙 점선 */
+.history-svg-container {
     position: absolute;
     left: 50%;
     top: 0;
-    bottom: 0;
     transform: translateX(-50%);
     z-index: 1;
 
-    width: 0.37vh;
+    width: 200px;
+    height: 100%;
 
-    background-color: var(--secondary-color);
+    pointer-events: none;
+}
+
+.history-item {
+    position: relative;
+    z-index: 2;
+
+    width: 45%;
+    min-height: 200px;
+    margin-bottom: 50px; 
+
+    display: flex;
+    flex-direction: column;
+}
+
+.history-item.right {
+    align-self: flex-end;
+    margin-top: 120px;
+}
+
+.history-item.left {
+    align-self: flex-start;
+    margin-top: 50px;
 }
 
 /* 개별 연혁 아이템 공통 */
@@ -54,6 +76,10 @@
 
     display: flex;
     flex-direction: column;
+}
+
+.history-item:first-child {
+    margin-top: 16.8vh;
 }
 
 /* 연도 박스 */

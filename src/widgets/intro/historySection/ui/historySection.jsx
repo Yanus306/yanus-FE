@@ -1,4 +1,5 @@
 import { historyData } from '../../../../shared/datas/historyData.js';
+import HistorySvgLine from './historySvgLine.jsx';
 import './historySection.css';
 
 const HistorySection = () => {
@@ -7,8 +8,10 @@ const HistorySection = () => {
             <h2 className="history-title">연혁</h2>
 
             <div className="history-container">
-                {/* 중앙 수직선 (나중에 SVG로 교체 가능하도록 빈 div로 시작) */}
-                <div className="history-line"></div>
+                {/* 중앙선 */}
+                <div className="history-svg-container">
+                    <HistorySvgLine itemCount={historyData.length} />
+                </div>
 
                 {historyData.map((data, index) => (
                     <div key={data.year} className={`history-item ${data.side}`}>
