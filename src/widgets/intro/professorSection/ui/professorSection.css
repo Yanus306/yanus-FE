@@ -36,6 +36,7 @@
     width: 15.9vw;
     height: 33.34vh;
 
+    /* 임시 */
     background-color: azure;
 }
 
@@ -50,7 +51,7 @@
 
 /* 이름 & 직함 */
 .professor-info-header {
-    width: 19.6875vw;
+    width: 19.5vw;
 
     display: flex;
     justify-content: space-between;

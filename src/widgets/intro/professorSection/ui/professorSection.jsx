@@ -26,7 +26,7 @@ const ProfessorSection = () => {
                 </div>
                 
                 <div className="professor-profileBox">
-                    <div className="professor-header">
+                    <div className="professor-info-header">
                         <span className="professor-name">정 기 현</span>
                         <span className="professor-position">학부장 / 전공주임</span>
                     </div>
