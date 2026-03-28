@@ -1,0 +1,147 @@
+/* 전체 섹션 */
+.professor-section {
+    width: 100%;
+    height: 172.7vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 섹션 타이틀 */
+.professor-title {
+    margin-top: 6.48vh;
+    margin-bottom: 7.13vh;
+
+    color: var(--font1-color);
+    font-size: 6.9vh;
+    font-weight: bold;
+}
+
+/* 위쪽 컨테이너 */
+.professor-upper-container {
+    width: 100%;
+    height: 49.26vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.1vw;
+
+    background-color: #EDF6FF;
+    box-shadow: 0px 0.741vh 0.741vh 0px rgba(0, 0, 0, 0.2);
+}
+
+.professor-img {
+    width: 15.9vw;
+    height: 33.34vh;
+
+    /* 임시 */
+    background-color: azure;
+}
+
+.professor-profileBox {
+    width: 25vw;
+    height: 23.24vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 이름 & 직함 */
+.professor-info-header {
+    width: 19.5vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.professor-name {
+    font-size: 2.96vh;
+    font-weight: bold;
+    color: var(--font1-color);
+    letter-spacing: 1vh;
+}
+
+.professor-position {
+    font-size: 2.22vh;
+    color: var(--font2-color);
+}
+
+/* 정보 리스트 */
+.professor-info-list {
+    height: 17.5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.professor-info-item {
+    display: flex;
+    align-items: center;
+}
+
+/* 항목명 (전공분야, 연구실 등) */
+.info-label {
+    width: 6.8vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: var(--font1-color);
+}
+
+/* 내용 */
+.info-value {
+    font-size: 2vh;
+    color: var(--font1-color);
+}
+
+
+/* 아래 컨테이너 */
+.professor-lower-container {
+    width: 74.9vw;
+    margin-top: 9.9vh;
+}
+
+.experience-title {
+    font-size: 2.96vh;
+    font-weight: bold;
+    margin-bottom: 2.3vh;
+    text-align: left;
+}
+
+/* 테이블 스타일 */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--font1-color);
+    font-size: 1.85vh;
+}
+
+.experience-table th {
+    height: 8.6vh;
+
+    border-top: 0.09vh solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.37vh solid var(--secondary-color);
+    border-left: 0.09vh solid rgba(0, 0, 0, 0.1);
+    border-right: 0.09vh solid rgba(0, 0, 0, 0.1);
+    font-size: 2.5925vh;
+}
+
+.experience-table td {
+    height: 5.925vh;
+    border-bottom: 0.09vh solid rgba(0, 0, 0, 0.1);
+    border-left: 0.09vh solid rgba(0, 0, 0, 0.1);
+    border-right: 0.09vh solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.td-content {
+    text-align: left !important;
+    padding-left: 2vw !important;
+}
+
+.th-year { width: 25%; }
+.th-content { width: 75%; }
