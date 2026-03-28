@@ -70,6 +70,13 @@
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
+:root {
+    --primary-color: #86D0F5;
+    --secondary-color: #D555AD; 
+    --font1-color: #383838; 
+    --font2-color: #B9B9B9; 
+}
+
 /* 기본 레이아웃 설정 */
 body {
     width: 100%;

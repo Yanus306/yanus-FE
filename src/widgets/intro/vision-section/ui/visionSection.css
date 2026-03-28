@@ -1,0 +1,62 @@
+/* 전체 섹션 */
+.vision-section {
+    width: 100%;
+    height: 92.6vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 가운데 내용 */
+.vision-wholeBox {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 48.4vh;
+}
+
+/* 로고 */
+.vision-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+
+    width: 19.2vw;
+    height: 19.2vw;
+
+    pointer-events: none;
+}
+
+/* 텍스트 */
+.vision-textBox {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    width: 100%;
+    height: 17.5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vision-title {
+    color: var(--font1-color);
+    font-size: 6.7vh;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.vision-text {
+    color: var(--font1-color);
+    font-size: 3.7vh;
+}

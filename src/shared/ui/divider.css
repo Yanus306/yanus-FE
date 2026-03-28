@@ -1,0 +1,51 @@
+/* 전체 컨테이너 */
+.divider-container {
+  position: relative; 
+  
+  width: 83.3vw;
+  height: 2.8vh;
+  margin: 3.9vh auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 선 */
+.divider-base-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+
+  width: 83.3vw;
+  height: 0.18vh;
+
+  background-color: var(--secondary-color);
+  transform: translateY(-50%);
+}
+
+/* 원 */
+.divider-dots-group {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 3.75vw;
+}
+
+.divider-dot {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.divider-dot-small {
+  width: 1.5vh;
+  height: 1.5vh;
+}
+
+.divider-dot-large {
+  width: 2.8vh;
+  height: 2.8vh;
+}
