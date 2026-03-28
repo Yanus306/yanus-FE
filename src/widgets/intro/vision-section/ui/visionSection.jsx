@@ -1,9 +1,14 @@
 import "./visionSection.css";
+import Divider from "../../../../shared/ui/divider.jsx";
 
 const VisionSection = () => {
   return (
     <div className="vision-section">
-        temp
+        <Divider />
+
+        <div className="">temp</div>
+
+        <Divider />
     </div>
   );
 };
