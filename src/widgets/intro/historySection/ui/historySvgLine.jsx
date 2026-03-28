@@ -1,7 +1,7 @@
 const HistorySvgLine = ({ itemCount }) => {
   const width = 200; 
   const centerX = width / 2;
-  const zigzagWidth = 200;  // 수평 이동 거리
+  const zigzagWidth = 120;  // 수평 이동 거리
   const stepY = 200;  // 지그재그 수직 거리
 
   // 각도 통일하기 위한 절반 스텝 (중앙 <-> 사이드 이동 시 사용)

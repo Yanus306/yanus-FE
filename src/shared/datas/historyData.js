@@ -70,7 +70,7 @@ export const historyData = [
     year: 2026,
     side: "left",
     items: [
-      { text: "4기 부원 모집 예정", isPoint: true },
+      { text: "yANUs 4기 시작", isPoint: true },
     ]
   }
 ];

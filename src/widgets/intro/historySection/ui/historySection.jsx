@@ -14,7 +14,11 @@ const HistorySection = () => {
                 </div>
 
                 {historyData.map((data, index) => (
-                    <div key={data.year} className={`history-item ${data.side}`}>
+                    <div
+                        key={data.year}
+                        /* index가 0일 때만 is-first 클래스를 추가합니다 */
+                        className={`history-item ${data.side} ${index === 0 ? 'is-first' : ''}`}
+                    >
                         {/* 연도 박스 */}
                         <div className="history-year">{data.year}</div>
 
