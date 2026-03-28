@@ -3,7 +3,7 @@ import "./historySection.css";
 const HistorySection = () => {
   return (
     <div className="history-section">
-        temp
+        <div className="history-title">연혁</div>
     </div>
   );
 };

@@ -1,3 +1,20 @@
 .history-section {
     width: 100%;
+    min-height: 80vh;
+    padding: 6.4vh 0;
+
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(
+        to bottom, 
+        #EDF6FF 0%, 
+        rgba(237, 246, 255, 0) 100%
+    );
+}
+
+.history-title {
+    color: var(--font1-color);
+    font-size: 6.9vh;
+    font-weight: bold;
 }
