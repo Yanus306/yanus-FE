@@ -1,4 +1,4 @@
-import Header from '../../components/header';
+import Header from '../../widgets/layout/ui/header.jsx';
 
 function Intro() {
   return (
