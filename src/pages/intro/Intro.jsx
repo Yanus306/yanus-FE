@@ -3,6 +3,7 @@ import VisualSection from '../../widgets/intro/visual-section/ui/visualSection.j
 import VisionSection from '../../widgets/intro/vision-section/ui/visionSection.jsx';
 import HistorySection from '../../widgets/intro/historySection/ui/historySection.jsx';
 import ProfessorSection from '../../widgets/intro/professorSection/ui/professorSection.jsx';
+import Footer from '../../widgets/layout/ui/footer/footer.jsx';
 
 function Intro() {
   return (
@@ -12,6 +13,7 @@ function Intro() {
       <VisionSection />
       <HistorySection />
       <ProfessorSection />
+      <Footer />
     </>
   )
 }
