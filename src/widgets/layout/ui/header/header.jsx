@@ -1,4 +1,4 @@
-import "../ui/header.css";
+import "../header/header.css";
 
 const Header = () => (
     <div className="header-section">
