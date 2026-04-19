@@ -2,4 +2,82 @@
 .member-section {
     width: 100%;
     height: 92.6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: antiquewhite;
+}
+
+.member-title {
+    margin-top: 5.4vh;
+    margin-bottom: 3vh;
+
+    color: var(--font1-color);
+    font-size: 6.9vh;
+    font-weight: bold;
+}
+
+.member-box {
+    position: relative;
+    z-index: 1;
+
+    width: 55vw;
+    height: 59.8vh;
+
+    background-color: rgb(190, 255, 212);
+}
+
+.member-tabs {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+
+    width: 50vw;
+    height: 59.8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.052vw solid var(--secondary-color);
+    border-radius: 0.52vw;
+    box-shadow: 0vw 0.208vw 0.208vw 0vw rgba(0, 0, 0, 0.25);
+    background-color: #FF94C0;
+}
+
+.member-gif {
+    width: 53.9vh;
+    height: 53.9vh;
+}
+
+.member-mark-box {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+
+    width: 8.8vw;
+    height: 59.8vh;
+    padding: 2.87vh 0;
+
+    display: flex;
+
+    background-color: coral;
+}
+
+.member-bookmark {
+    width: 8.8vw;
+    height: 4.63vh;
+    padding-right: 2vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #B9DDFF;
+    border-radius: 0.52vw;
+    font-size: 1.85vh;
+    font-weight: bold;
+    color: var(--font1-color);
 }
