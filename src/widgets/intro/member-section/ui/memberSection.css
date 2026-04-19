@@ -43,9 +43,53 @@
     background-color: #FF94C0;
 }
 
+.member-tabs.active {
+    padding: 4.074vh 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+}
+
 .member-gif {
     width: 53.9vh;
     height: 53.9vh;
+}
+
+.member-table {
+    width: 43.4375vw;
+
+    border-collapse: collapse;
+    color: var(--font1-color);
+}
+
+.member-table th {
+    height: 6.85vh;
+
+    font-size: 2.59vh;
+    font-weight: 500;
+    border-bottom: 0.37vh solid var(--secondary-color);
+}
+
+.member-table tr {
+    height: 5.74vh;
+
+    font-size: 2.22vh;
+    border-bottom: 0.37vh solid #E6E6E6;
+}
+
+.member-table tr:last-of-type {
+    border-bottom: none;
+}
+
+.member-table td {
+    width: 10vw;
+}
+
+.member-table td:nth-of-type(3) {
+    width: 3vw;
 }
 
 .member-mark-box {

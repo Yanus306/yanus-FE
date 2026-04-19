@@ -1,6 +1,7 @@
 export const MEMBER_DATA = {
   "1기": [
     { gen: "23-겨", name: "권건표", role: "1기", field: "ALL?", note: "ㅇㅅㅇ" },
+    { gen: "23-겨", name: "권건표", role: "1기", field: "ALL?", note: "ㅇㅅㅇ" },
   ],
 
   "2기": [
