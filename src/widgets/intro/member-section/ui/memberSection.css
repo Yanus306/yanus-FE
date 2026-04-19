@@ -1,0 +1,130 @@
+/* 전체 섹션 */
+.member-section {
+    width: 100%;
+    height: 92.6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-title {
+    margin-top: 5.4vh;
+    margin-bottom: 3vh;
+
+    color: var(--font1-color);
+    font-size: 6.9vh;
+    font-weight: bold;
+}
+
+.member-box {
+    position: relative;
+    z-index: 1;
+
+    width: 50vw;
+    height: 59.8vh;
+}
+
+.member-tabs {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+
+    width: 50vw;
+    height: 59.8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.052vw solid var(--secondary-color);
+    border-radius: 0.52vw;
+    box-shadow: 0vw 0.208vw 0.208vw 0vw rgba(0, 0, 0, 0.25);
+    background-color: #FF94C0;
+}
+
+.member-tabs.active {
+    padding: 4.074vh 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+}
+
+.member-gif {
+    width: 53.9vh;
+    height: 53.9vh;
+}
+
+.member-table {
+    width: 43.4375vw;
+
+    border-collapse: collapse;
+    color: var(--font1-color);
+}
+
+.member-table th, 
+.member-table td {
+    text-align: center;      
+    vertical-align: middle;  
+}
+
+.member-table th {
+    height: 6.85vh;
+
+    font-size: 2.59vh;
+    font-weight: 500;
+    border-bottom: 0.37vh solid var(--secondary-color);
+}
+
+.member-table tr {
+    height: 5.74vh;
+
+    font-size: 2.22vh;
+    border-bottom: 0.37vh solid #E6E6E6;
+}
+
+.member-table tr:last-of-type {
+    border-bottom: none;
+}
+
+.member-table td {
+    width: 10vw;
+}
+
+.member-table td:nth-of-type(3), 
+.member-table th:nth-of-type(3) {
+    width: 3vw;
+}
+
+.member-mark-box {
+    position: absolute;
+    right: -5.2vw;
+    z-index: 5;
+
+    width: 8.8vw;
+    height: 59.8vh;
+    padding: 2.87vh 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.37vh;
+}
+
+.member-bookmark {
+    width: 8.8vw;
+    height: 4.63vh;
+    padding-right: 2vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #B9DDFF;
+    border-radius: 0.52vw;
+    font-size: 1.85vh;
+    font-weight: bold;
+    color: var(--font1-color);
+}
