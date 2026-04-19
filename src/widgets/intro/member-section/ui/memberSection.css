@@ -6,8 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: antiquewhite;
 }
 
 .member-title {
@@ -25,8 +23,6 @@
 
     width: 55vw;
     height: 59.8vh;
-
-    background-color: rgb(190, 255, 212);
 }
 
 .member-tabs {
@@ -62,8 +58,8 @@
     padding: 2.87vh 0;
 
     display: flex;
-
-    background-color: coral;
+    flex-direction: column;
+    gap: 0.37vh;
 }
 
 .member-bookmark {
