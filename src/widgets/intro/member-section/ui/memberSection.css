@@ -65,6 +65,12 @@
     color: var(--font1-color);
 }
 
+.member-table th, 
+.member-table td {
+    text-align: center;      
+    vertical-align: middle;  
+}
+
 .member-table th {
     height: 6.85vh;
 
@@ -88,7 +94,8 @@
     width: 10vw;
 }
 
-.member-table td:nth-of-type(3) {
+.member-table td:nth-of-type(3), 
+.member-table th:nth-of-type(3) {
     width: 3vw;
 }
 
