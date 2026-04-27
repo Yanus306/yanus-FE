@@ -14,53 +14,59 @@ const MemberSection = () => {
 
       <div className="member-title">멤버 소개</div>
 
-      <div className="member-box">
-        <div className={`member-tabs ${activeTab ? "active" : ""}`}>
-          {activeTab ? (
-            <table className="member-table">
-              <thead>
-                <tr>
-                  <th>기수</th>
-                  <th>이름</th>
-                  <th></th>
-                  <th>분야</th>
-                  <th>비고?</th>
-                </tr>
-              </thead>
-              <tbody>
-                {MEMBER_DATA[activeTab].map((member, index) => (
-                  <tr key={index}>
-                    <td>{member.gen}</td>
-                    <td>{member.name}</td>
-                    <td>
-                      <img
-                        src={CrownIcon}
-                        alt="crown"
-                        className="member-crownIcon"
-                      />
-                        <span className="member-role">{member.role}</span>
-                    </td>
-                    <td>{member.field}</td>
-                    <td>{member.note}</td>
+      <div className="member-container">
+        <div className="member-box">
+          <div className={`member-tabs ${activeTab ? "active" : ""}`}>
+            {activeTab ? (
+              <table className="member-table">
+                <thead>
+                  <tr>
+                    <th>기수</th>
+                    <th>이름</th>
+                    <th></th>
+                    <th>분야</th>
+                    <th>비고?</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <img src={YanusGif} alt="Intro" className="member-gif" />
-          )}
-        </div>
+                </thead>
+                <tbody>
+                  {MEMBER_DATA[activeTab].map((member, index) => (
+                    <tr key={index}>
+                      <td>{member.gen}</td>
+                      <td>{member.name}</td>
+                      <td>
+                        {member.role && (
+                          <>
+                            <img
+                              src={CrownIcon}
+                              alt="crown"
+                              className="member-crownIcon"
+                            />
+                            <span className="member-role">{member.role}</span>
+                          </>
+                        )}
+                      </td>
+                      <td>{member.field}</td>
+                      <td>{member.note}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <img src={YanusGif} alt="Intro" className="member-gif" />
+            )}
+          </div>
 
-        <div className="member-mark-box">
-          {Object.keys(MEMBER_DATA).map((gen) => (
-            <div
-              key={gen}
-              className={`member-bookmark ${activeTab === gen ? "active" : ""}`}
-              onClick={() => setActiveTab(gen)}
-            >
-              {gen}
-            </div>
-          ))}
+          <div className="member-mark-box">
+            {Object.keys(MEMBER_DATA).map((gen) => (
+              <div
+                key={gen}
+                className={`member-bookmark ${activeTab === gen ? "active" : ""}`}
+                onClick={() => setActiveTab(gen)}
+              >
+                {gen}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
