@@ -96,6 +96,8 @@
 
 .member-table td:nth-of-type(3), 
 .member-table th:nth-of-type(3) {
+    position: relative;
+
     width: 3vw;
 }
 
@@ -126,5 +128,23 @@
     border-radius: 0.52vw;
     font-size: 1.85vh;
     font-weight: bold;
+    color: var(--font1-color);
+}
+
+.member-crownIcon {
+    position: absolute;
+    left: -2vw;
+    bottom: 1.8vh;
+
+    width: 1.5vw;
+    height: 2vh;
+}
+
+.member-role {
+    position: absolute;
+    left: -1.62vw;
+    bottom: 1.6vh;
+
+    font-size: 1.2vh;
     color: var(--font1-color);
 }
