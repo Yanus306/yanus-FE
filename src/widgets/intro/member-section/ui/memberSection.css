@@ -106,8 +106,7 @@
 .member-mark-box {
     position: absolute;
     top: 0;
-    right: -5.2vw;
-    z-index: 5;
+    right: -6.2vw;
 
     width: 8.8vw;
     height: auto;
@@ -119,7 +118,10 @@
 }
 
 .member-bookmark {
-    width: 8.8vw;
+    position: relative;
+    z-index: 1;
+
+    width: 7.8vw;
     height: 4.63vh;
     padding-right: 2vw;
 
@@ -128,10 +130,16 @@
     align-items: center;
 
     background-color: #B9DDFF;
+    border: 0.1vh solid #9AB5D8;
     border-radius: 0.52vw;
     font-size: 1.85vh;
     font-weight: bold;
     color: var(--font1-color);
+}
+
+.member-bookmark.active {
+    z-index: 11; 
+    background-color: #EDF6FF;
 }
 
 .member-crownIcon {
