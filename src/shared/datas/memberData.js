@@ -17,9 +17,25 @@ export const MEMBER_DATA = {
 
   "2기": [
     { gen: "24-1", name: "권태현", role: "", field: "ㅇㅇㅇ", note: "ㅇㅅㅇ" },
+    { gen: "24-1", name: "이석준", role: "", field: "ㅇㅇㅇ", note: "ㅇㅅㅇ" },
+    { gen: "24-1", name: "모아사랑", role: "", field: "AI / SE", note: "ㅇㅅㅇ" },
+    { gen: "24-여", name: "김세훈", role: "", field: "FE / BE?", note: "ㅇㅅㅇ" },
+    { gen: "24-여", name: "황순규", role: "", field: "AI", note: "ㅇㅅㅇ" },
   ],
 
   "3기": [
     { gen: "25-겨", name: "윤동호", role: "", field: "FE? / BE", note: "ㅇㅅㅇ" },
+    { gen: "25-겨", name: "권민주", role: "", field: "FE", note: "ㅇㅅㅇ" },
+    { gen: "25-겨", name: "한서현", role: "", field: "AI", note: "ㅇㅅㅇ" },
+    { gen: "25-1", name: "최보영", role: "", field: "AI", note: "ㅇㅅㅇ" },
+    { gen: "25-1", name: "김민성", role: "4기", field: "And", note: "ㅇㅅㅇ" },
+    { gen: "25-1", name: "박종열", role: "", field: "BE", note: "ㅇㅅㅇ" },
+  ],
+
+  "4기": [
+    { gen: "26-1", name: "김태훈", role: "", field: "미정", note: "ㅇㅅㅇ" },
+    { gen: "26-1", name: "김승준", role: "", field: "미정", note: "ㅇㅅㅇ" },
+    { gen: "26-1", name: "권도윤", role: "", field: "미정", note: "ㅇㅅㅇ" },
+    { gen: "26-1", name: "이호성", role: "", field: "미정", note: "ㅇㅅㅇ" },
   ],
 };
