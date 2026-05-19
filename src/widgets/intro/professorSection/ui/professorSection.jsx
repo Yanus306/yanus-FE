@@ -1,6 +1,7 @@
 import "./professorSection.css";
 import Divider from "../../../../shared/ui/divider.jsx";
 import { professorInfo, experienceData } from "../../../../shared/datas/professorData.js";
+import ProfessorImg from "/src/assets/professorImg.png";
 
 const ProfessorSection = () => {
     return (
@@ -11,7 +12,7 @@ const ProfessorSection = () => {
             {/* 상단 프로필 영역 */}
             <div className="professor-upper-container">
                 <div className="professor-img-wrapper">
-                    <div className="professor-img"></div>
+                    <img src={ProfessorImg} alt="" className="professor-img"></img>
                 </div>
                 
                 <div className="professor-profileBox">
