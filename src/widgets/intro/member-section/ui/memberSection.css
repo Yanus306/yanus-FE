@@ -16,6 +16,7 @@
     color: var(--font1-color);
     font-size: 6.9vh;
     font-weight: bold;
+    user-select: none;
 }
 
 .member-box {
@@ -79,6 +80,7 @@
     font-size: 2.59vh;
     font-weight: 500;
     border-bottom: 0.37vh solid var(--secondary-color);
+    user-select: none;
 }
 
 .member-table tr {
@@ -115,6 +117,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.37vh;
+
+    cursor: pointer;
 }
 
 .member-bookmark {
@@ -135,6 +139,7 @@
     font-size: 1.85vh;
     font-weight: bold;
     color: var(--font1-color);
+    user-select: none;
 }
 
 .member-bookmark.active {
