@@ -30,6 +30,7 @@
     height: 19.2vw;
 
     pointer-events: none;
+    user-select: none;
 }
 
 /* 텍스트 */
@@ -47,6 +48,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    user-select: none;
 }
 
 .vision-title {

@@ -16,6 +16,7 @@
     color: var(--font1-color);
     font-size: 6.9vh;
     font-weight: bold;
+    user-select: none;
 }
 
 /* 위쪽 컨테이너 */

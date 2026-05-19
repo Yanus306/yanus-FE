@@ -63,8 +63,10 @@
 
 .visual-overlay-text {
   font-size: 3.7vh;
+  user-select: none;
 }
 
 .visual-overlay-title {
   font-size: 11vh;
+  user-select: none;
 }
