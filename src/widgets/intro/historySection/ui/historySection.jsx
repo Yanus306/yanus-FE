@@ -1,8 +1,11 @@
 import { historyData } from '../../../../shared/datas/historyData.js';
 import HistorySvgLine from './historySvgLine.jsx';
 import './historySection.css';
+import { useScrollAnimation } from '../logic/useScrollAnimation.js';
 
 const HistorySection = () => {
+    const elementRefs = useScrollAnimation();
+
     return (
         <div className="history-section">
             <h2 className="history-title">연혁</h2>
@@ -16,7 +19,9 @@ const HistorySection = () => {
                 {historyData.map((data, index) => (
                     <div
                         key={data.year}
-                        /* index가 0일 때만 is-first 클래스를 추가합니다 */
+                        /* 각 아이템을 감지할 수 있도록 ref 연결 */
+                        ref={(el) => (elementRefs.current[index] = el)}
+                        /* index가 0일 때만 is-first 클래스 추가 */
                         className={`history-item ${data.side} ${index === 0 ? 'is-first' : ''}`}
                     >
                         {/* 연도 박스 */}
