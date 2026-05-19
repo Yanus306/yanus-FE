@@ -2,15 +2,15 @@ const HistorySvgLine = ({ itemCount }) => {
   const width = 200; 
   const centerX = width / 2;
   const zigzagWidth = 120;  // 수평 이동 거리
-  const stepY = 200;  // 지그재그 수직 거리
+  const stepY = 200;  // 지그재그 수직 거리 (CSS의 item height와 동일해야 함!)
 
-  // 각도 통일하기 위한 절반 스텝 (중앙 <-> 사이드 이동 시 사용)
+  // 각도 통일하기 위한 절반 스텝
   const firstStepY = stepY / 2; 
 
   // 시작점 설정
   const startCircleY = 20;  // 최상단 원 위치
   const straightLineLength = 80;  // 처음에 수직으로 내려올 직선 길이
-  const startZigzagY = startCircleY + straightLineLength;  // 본격적으로 꺾이기 시작하는 Y
+  const startZigzagY = startCircleY + straightLineLength + 10;  // 110 (본격적으로 꺾이기 시작하는 Y)
 
   let points = [
     { x: centerX, y: startCircleY }, // 원 위치
@@ -22,7 +22,7 @@ const HistorySvgLine = ({ itemCount }) => {
     const isEven = i % 2 === 0;
     const targetX = isEven ? centerX + zigzagWidth : centerX - zigzagWidth;
     
-    // Y 좌표 계산: 꺾이기 시작한 지점 + 첫 번째 꺾임(절반) + 이후 지그재그(전체)
+    // Y 좌표 계산: 꺾이기 시작한 지점(110) + 첫 번째 꺾임(100) + 이후 추가 스텝(i * 200)
     const targetY = startZigzagY + firstStepY + (i * stepY);
     
     points.push({ x: targetX, y: targetY });
@@ -40,12 +40,14 @@ const HistorySvgLine = ({ itemCount }) => {
 
   const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
 
+  // 데이터가 늘어난 만큼 SVG 영역의 전체 높이를 계산
+  const totalHeight = arrowY + 20;
+
   return (
     <svg 
-      width={width} 
-      height={arrowY + 20} 
-      viewBox={`0 0 ${width} ${arrowY + 20}`} 
-      style={{ overflow: 'visible' }}
+      viewBox={`0 0 ${width} ${totalHeight}`} 
+      preserveAspectRatio="none"
+      style={{ width: '100%', height: '100%', position: 'absolute', top: 0 }}
     >
       <circle cx={centerX} cy={startCircleY} r={6} fill="var(--secondary-color)" />
 
@@ -53,6 +55,7 @@ const HistorySvgLine = ({ itemCount }) => {
         d={pathD}
         stroke="var(--secondary-color)"
         strokeWidth="2.5"
+        vector-effect="non-scaling-stroke"
         strokeDasharray="8 6"
         fill="none"
         strokeLinecap="round"
@@ -63,6 +66,7 @@ const HistorySvgLine = ({ itemCount }) => {
         d={`M ${centerX - 10} ${arrowY - 10} L ${centerX} ${arrowY} L ${centerX + 10} ${arrowY - 10}`}
         stroke="var(--secondary-color)"
         strokeWidth="2.5"
+        vector-effect="non-scaling-stroke"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
