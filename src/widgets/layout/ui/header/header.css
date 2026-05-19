@@ -11,11 +11,10 @@
 }
 
 .header-textlogo {
-    width: 10vw;
-    height: 3.5vh;
+    width: auto;
+    height: 4vh;
 
-    background-color: #D9D9D9;
-    font-size: 1.75vh;
+    object-fit: cover;
 }
 
 .header-navBox {

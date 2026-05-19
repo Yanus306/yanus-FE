@@ -1,10 +1,9 @@
 import "../header/header.css";
+import TempLogo from "/src/assets//tempLogo.png";
 
 const Header = () => (
     <div className="header-section">
-        <div className="header-textlogo">
-            글자로고 (임시)
-        </div>
+        <img src={TempLogo} alt="글자 로고" className="header-textlogo"></img>
 
         <div className="header-navBox">
             <div className="header-nav">
