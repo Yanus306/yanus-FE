@@ -3,9 +3,10 @@ import "./visualSection.css";
 
 // 임시
 import yanus1 from "../../../../assets/yanus1.jpg";
-import pictureLogo from "../../../../assets/pictureLogo.png";
+import TempPicture1 from "../../../../assets/tempPicture1.jpg";
+import TempPicture2 from "../../../../assets/tempPicture2.jpg";
 
-const images = [yanus1, pictureLogo, pictureLogo];
+const images = [yanus1, TempPicture1, TempPicture2];
 
 const VisualSection = () => {
   const { currentIndex } = useVisualSlider(images.length);
