@@ -10,8 +10,7 @@
 }
 
 /* 이메일 및 비밀번호 공통 입력창 스타일 */
-.auth_email,
-.auth_password {
+.auth_input {
     all: unset;
 
     width: 100%;
@@ -23,8 +22,7 @@
     box-sizing: border-box;
 }
 
-.auth_email:focus,
-.auth_password:focus {
+.auth_input:focus {
     outline: none;
     border-color: var(--secondary-color);
 }

@@ -16,7 +16,7 @@ export const LoginForm = () => {
         placeholder="이메일을 입력하세요" 
         value={email}
         onChange={(e) => setEmail(e.target.value)} 
-        className="auth_email"
+        className="auth_input"
       />
       <div className="auth_error" style={{ visibility: emailError ? 'visible' : 'hidden' }}>
         {emailError}
@@ -27,7 +27,7 @@ export const LoginForm = () => {
         placeholder="비밀번호를 입력하세요" 
         value={password}
         onChange={(e) => setPassword(e.target.value)} 
-        className="auth_password"
+        className="auth_input"
       />
       <div className="auth_error" style={{ visibility: passwordError ? 'visible' : 'hidden' }}>
         {passwordError}
