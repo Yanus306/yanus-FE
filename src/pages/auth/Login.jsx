@@ -1,5 +1,4 @@
 import { AuthWidget } from '../../widgets/auth/authWidget';
-// import { AuthForm } from '../../features/auth/authForm';
 
 const Login = () => {
   return (
