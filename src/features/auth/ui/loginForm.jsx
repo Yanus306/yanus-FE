@@ -37,7 +37,7 @@ export const LoginForm = () => {
         로그인
       </button>
 
-      <div className="auth_error" style={{ visibility: errorMessage ? 'visible' : 'hidden' }}>
+      <div className="auth_error" style={{ visibility: errorMessage ? 'visible' : 'hidden'}}>
         {errorMessage}
       </div>
     </form>
