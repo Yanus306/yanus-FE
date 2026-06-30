@@ -34,4 +34,4 @@ export const AuthWidget = ({ title, bottomText, bottomLink, children }) => {
       </div>
     </div>
   );
-};
+}
