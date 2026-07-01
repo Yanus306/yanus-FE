@@ -32,9 +32,9 @@ export const useLogin = () => {
 
     try {
       console.log('서버로 데이터 전송:', { email, password });
-      /* 백엔드 생성 시 주석 해제
+
       // API 통신 로직
-      const response = await fetch('/api/v1/auth/login', {
+      const response = await fetch('https://api.yanus.bond/api/v1/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,24 +58,7 @@ export const useLogin = () => {
         
         navigate('/');
       }
-      */
 
-      // --- 임시 로직 시작 ---
-      // 실제 통신처럼 1초 대기
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // 가짜 토큰 데이터 생성
-      const mockAccessToken = "mock_access_token_12345";
-      const mockRefreshToken = "mock_refresh_token_67890";
-      const mockTokenType = "Bearer";
-
-      // 로컬 스토리지에 가짜 토큰 저장 (스웨거 명세 흐름 모방)
-      localStorage.setItem('accessToken', mockAccessToken);
-      localStorage.setItem('refreshToken', mockRefreshToken);
-      
-      console.log('로그인 성공 (가짜 응답):', mockTokenType, mockAccessToken);
-      alert("로그인 성공! (임시 가짜 응답)");
-      // --------------------
 
     } catch (error) {
       console.error('로그인 에러:', error);
