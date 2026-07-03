@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const useRegister = () => {
+    const navigate = useNavigate();
+
     // 폼 상태
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -12,7 +15,7 @@ export const useRegister = () => {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [passwordConfirmError, setPasswordConfirmError] = useState('');
-    const [errorMessage, setErrorMessage] = useState(''); // 서버 통신 등 전체 에러용
+    const [errorMessage, setErrorMessage] = useState('');
 
     // 유효성 검사 함수
     const validateForm = () => {
@@ -59,14 +62,37 @@ export const useRegister = () => {
         if (!validateForm()) return;
 
         try {
-            // TODO: 실제 서버로 회원가입 API 보내는 로직을 여기에 작성해!
             console.log("서버로 보낼 데이터:", { name, email, password });
+            /* 백엔드 생성 시 주석 해제
+            // API 통신 로직
+            const response = await fetch('/api/v1/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 
+                    name, 
+                    email, 
+                    password
+                }),
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.message || '회원가입 요청에 실패했습니다.');
+            }*/
+
+            // 통신 딜레이 (임시)
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+
+            alert("회원가입이 완료되었습니다!");
             
-            // 예시: await axios.post('/api/register', { name, email, password });
+            navigate('/login');
             
-            alert("회원가입 버튼 클릭됨! (API 연결 필요)");
         } catch (error) {
-            setErrorMessage('회원가입 처리 중 오류가 발생했습니다.');
+            console.error('회원가입 에러:', error);
+            setErrorMessage(error.message || '회원가입 처리 중 오류가 발생했습니다.');
         }
     };
 
