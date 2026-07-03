@@ -17,7 +17,12 @@ const Header = () => {
         
         {isLoggedIn ? (
           <>
-            <div className="header-nav">출근부</div>
+            <div 
+                className="header-nav"
+                onClick={() => window.location.href = 'https://yanus.bond/login'}
+            >
+                출근부
+            </div>
             
             <div className="header-nav header-user-wrapper">
               {userName}님
