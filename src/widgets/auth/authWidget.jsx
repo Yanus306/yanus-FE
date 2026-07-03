@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./authWidget.css";
-import TextLogo from "/src/assets/TextLogo.png";
+import TextLogo from "/src/assets/textLogo.png";
 
 export const AuthWidget = ({ title, bottomText, bottomLink, children }) => {
   const navigate = useNavigate();
