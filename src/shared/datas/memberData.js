@@ -36,6 +36,5 @@ export const MEMBER_DATA = {
     { gen: "26-1", name: "김태훈", role: "", field: "미정", note: "ㅇㅅㅇ" },
     { gen: "26-1", name: "김승준", role: "", field: "미정", note: "ㅇㅅㅇ" },
     { gen: "26-1", name: "권도윤", role: "", field: "미정", note: "ㅇㅅㅇ" },
-    { gen: "26-1", name: "이호성", role: "", field: "미정", note: "ㅇㅅㅇ" },
   ],
 };
