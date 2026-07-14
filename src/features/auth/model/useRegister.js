@@ -63,9 +63,9 @@ export const useRegister = () => {
 
         try {
             console.log("서버로 보낼 데이터:", { name, email, password });
-            /* 백엔드 생성 시 주석 해제
+
             // API 통신 로직
-            const response = await fetch('/api/v1/auth/register', {
+            const response = await fetch('https://api.yanus.bond/api/v1/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -81,10 +81,8 @@ export const useRegister = () => {
 
             if (!response.ok) {
                 throw new Error(result.message || '회원가입 요청에 실패했습니다.');
-            }*/
+            }
 
-            // 통신 딜레이 (임시)
-            await new Promise((resolve) => setTimeout(resolve, 1000));
 
             alert("회원가입이 완료되었습니다!");
             

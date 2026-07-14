@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     user-select: none;
 }
 
@@ -26,4 +26,36 @@
     margin-left: 3.75vw;
     font-size: 1.8vh;
     cursor: pointer;
+}
+
+.header-user-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.header-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 50;
+
+    display: none;
+    margin-top: 1vh;
+    padding: 2vh 2vw;
+
+    background-color: white;
+    border: 0.2vh solid var(--secondary-color);
+    border-radius: 2vh;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.header-user-wrapper:hover .header-dropdown {
+  display: block;
+}
+
+.header-dropdown-item {
+    font-size: 1.4vh;
+    color: var(--font1-color);
+    transition: color 0.2s;
 }
